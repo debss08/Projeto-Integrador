@@ -1,10 +1,9 @@
 package model;
 public class Pessoa {
 	
-	private String nome;
-	private String cpf;
-	private String data_nasc;
-	private int id;
+	protected String nome;
+	protected String cpf;
+	protected String data_nasc;
 	
 	public Pessoa(String umNome, String umCpf, String data) {
 		this.nome=umNome;
@@ -12,15 +11,9 @@ public class Pessoa {
 		this.data_nasc = data;
 	}
 	
-	public Pessoa() { 
+	//CONSTRUTOR VAZIO PROPOSITALMENTE
+	public Pessoa() {
 		
-	}
-	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	
 	public String getNome() {
@@ -46,7 +39,7 @@ public class Pessoa {
 		this.data_nasc=data;
 	}
 	
-	
+	 @Override
 	public String toString() {
 		return "Nome: "+this.nome+" CPF:"+this.cpf+" Data de Nascimento: "+ this.data_nasc;
 	}

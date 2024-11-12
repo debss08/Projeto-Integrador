@@ -14,10 +14,9 @@ public class BancoDeDados {
 				bd = DriverManager.getConnection(
 						"jdbc:mysql://localhost:3306/bd_coleo",
 						"root",
-						"root"
+						"d3bora2008"
 						);
 			} catch (SQLException e) {
-				// erro ao conectar ao bd, vamos imprimir o stack trace e encerrar
 				e.printStackTrace();
 				System.exit(1);
 			}
