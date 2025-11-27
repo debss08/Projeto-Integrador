@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+<main id="welcomePage">
+    <div class="containerWelcome">
+        <img src="../imagens/Libris.png" alt="icone" class="iconeLibris">
+        <h1 class="subtitulo">Bem vindo ao Libris, seu sistema de gerenciamento de Biblioteca!</h1>
+        <h3>Tudo que sua biblioteca precisa, num só lugar</h3>
+        <p>Por favor, faça login para usar nossos serviços</p>
+        
+        <form action="../php/processa_login.php" method="POST" class="flexColumn">
+            <input type="text" class="input welcome" name="matricula" placeholder="Matrícula" required>
+            <input type="password" class="input welcome" name="senha" placeholder="Senha" required>
+            <button type="submit" class="btn login">Login</button>
+        </form>
+
+        <p>Primeira vez? Cadastre-se aqui!</p>
+        <a class="btn signin" href="../html/cadastro.html">Cadastrar</a>
+    </div>
+</main>
+</body>
+</html>
